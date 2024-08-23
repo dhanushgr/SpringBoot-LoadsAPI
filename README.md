@@ -44,11 +44,15 @@ git clone git@github.com:dhanushgr/SpringBoot-LoadsAPI.git
 * Open Pgadmin (PostgreSQL console) and create a new database called `LoadAPI` in your Pgadmin console. You can search in Google for "How to create database in postgresql pgadmin"
 * Default port of PostgreSQL is `5432`. If there is a port conflict (port already in use), then you need to update the postgresql port in `spring.datasource.url` present in the file `src/main/resources/application.properties`:
   https://github.com/dhanushgr/SpringBoot-LoadsAPI/blob/main/src/main/resources/application.properties#L4
-3. Open the project `SpringBoot-LoadsAPI` using your IDE (Intellij or VSCode or Eclipse etc.)
-4. In the IDE, navigate to `src/main/java/com/dhanush/springproject/SpringprojectApplication.java`
-5. Right click on `SpringprojectApplication.java` and click on `Run`
-6. Open Postman and then try out various REST API methods (GET, PUT, POST, DELETE). Alternatively, you can use `curl` command instead of Postman.
-7. You can verify the data present by running `SELECT` SQL queries in PostgreSQL pgadmin console.
+3. Run the project using Maven OR your IDE:
+* Using Maven: Install [Apache Maven](https://maven.apache.org/download.cgi), setup maven in the `PATH` variable and verify the command `mvn -version`. Finally, run the project:
+```
+cd SpringBoot-LoadsAPI/
+./mvnw spring-boot:run
+``` 
+* Using IDE: Open the project `SpringBoot-LoadsAPI` using your IDE (Intellij or VSCode or Eclipse etc.) and navigate to `src/main/java/com/dhanush/springproject/SpringprojectApplication.java`. Right click on `SpringprojectApplication.java` and click on `Run`
+4. Open Postman and then try out various REST API methods (GET, PUT, POST, DELETE). Alternatively, you can use `curl` command instead of Postman.
+5. You can verify the data present by running `SELECT` SQL queries in PostgreSQL pgadmin console.
 
 ### Example screenshots
 
